@@ -5,8 +5,10 @@ import Hero from "../components/Hero";
 export default function HomePage(props) {
   return (
     <>
-      <Hero>
-        <Link to="/products">our products</Link>
+      <Hero title="awesome gadgets" max="true">
+        <Link to="/products" className="main-link" style={{ margin: "2rem" }}>
+          our products
+        </Link>
       </Hero>
     </>
   );

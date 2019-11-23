@@ -1,11 +1,17 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Hero from "../components/Hero";
+import defaultBcg from "../images/defaultBcg.jpeg";
 
-function DefaultPage(props) {
+export default function DefaultPage(props) {
   return (
     <>
-      <h1>hello from default page</h1>
+      <Hero img={defaultBcg} title="404" max="true">
+        <h2 className="text-uppercase">page not found</h2>
+        <Link to="/" className="main-link" style={{ margin: "2rem" }}>
+          return home
+        </Link>
+      </Hero>
     </>
   );
 }
-
-export default DefaultPage;

@@ -2,7 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Hero from "../components/Hero";
 
-export default function HomePage(props) {
+import Services from "../components/HomePage/Services";
+import Featured from "../components/HomePage/Featured";
+export default function HomePage() {
   return (
     <>
       <Hero title="awesome gadgets" max="true">
@@ -10,6 +12,8 @@ export default function HomePage(props) {
           our products
         </Link>
       </Hero>
+      <Services />
+      <Featured />
     </>
   );
 }
